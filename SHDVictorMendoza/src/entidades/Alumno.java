@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import modelo.conexion;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-
+//COMENTARIO
 public class Alumno {
 	
 	private String nombre,apaterno,amaterno,fecha,sexo,carrera;
