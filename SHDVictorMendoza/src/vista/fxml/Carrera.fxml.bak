@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="1232.0" xmlns:fx="http://javafx.com/fxml" fx:controller="vista.controlador.Control">
+  <children>
+    <Pane prefHeight="519.0" prefWidth="1232.0">
+      <children>
+        <ToolBar layoutX="14.0" layoutY="32.0" prefWidth="1218.0">
+          <items>
+            <Button fx:id="guardar" mnemonicParsing="false" prefWidth="110.0" text="Guardar" onAction="#Guardar"/>
+            <Button fx:id="eliminar" mnemonicParsing="false" prefWidth="99.0" text="Eliminar" onAction="#Borrar"/>
+            <Button fx:id="modificar" mnemonicParsing="false" prefWidth="99.0" text="Modificar" onAction="#Modificar"/>
+          </items>
+        </ToolBar>
+        <TextField fx:id="nombre" layoutX="260.0" layoutY="92.0" prefWidth="200.0" />
+        <Text layoutX="57.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre">
+          <font>
+            <Font size="18.0" fx:id="x1" />
+          </font>
+        </Text>
+        <Text font="$x1" layoutX="57.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Siglas" />
+        <Text font="$x1" layoutX="57.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jefe de Carrera" />
+        <Text font="$x1" layoutX="57.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matricula" />
+        <Text font="$x1" layoutX="57.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modalidad" />
+        <Text font="$x1" layoutX="57.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acreditado" />
+        <TextField id="carrera" fx:id="jefe" layoutX="260.0" layoutY="170.0" prefWidth="200.0" />
+        <TextField fx:id="siglas" layoutX="260.0" layoutY="131.0" prefWidth="200.0" />
+        <TextField fx:id="matricula" layoutX="260.0" layoutY="205.0" prefWidth="200.0" />
+        <TextField fx:id="modalidad" layoutX="260.0" layoutY="241.0" prefWidth="200.0" />
+        <ComboBox fx:id="acreditado" layoutX="389.0" layoutY="282.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="No" />
+              <String fx:value="Si" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Button layoutX="1190.0" layoutY="5.0" mnemonicParsing="false" text="X" onAction="#salir"/>
+        <Text font="$x1" layoutX="46.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carrera" />
+        <TableView fx:id="datos" layoutX="652.0" layoutY="90.0" prefHeight="366.0" prefWidth="522.0">
+          <columns>
+            <TableColumn editable="false" prefWidth="75.0" text="ID" visible="false" fx:id="ID" >
+            		<cellValueFactory>
+            		<PropertyValueFactory property="id"/>
+            		</cellValueFactory>
+            </TableColumn>
+            <TableColumn editable="false" prefWidth="75.0" text="Nombre" fx:id="nombre1" >
+            		<cellValueFactory>
+            		<PropertyValueFactory property="nombre"/>
+            		</cellValueFactory>
+            </TableColumn>
+            <TableColumn editable="false" prefWidth="75.0" text="Siglas" fx:id="siglas1" >
+            		<cellValueFactory>
+            		<PropertyValueFactory property="siglas"/>
+            		</cellValueFactory>
+            </TableColumn>
+            <TableColumn editable="false" prefWidth="75.0" text="Jefe" fx:id="jefe1" >
+            		<cellValueFactory>
+            		<PropertyValueFactory property="jefe"/>
+            		</cellValueFactory>
+            </TableColumn>
+            <TableColumn editable="false" prefWidth="75.0" text="Matricula" fx:id="matricula1" >
+            		<cellValueFactory>
+            		<PropertyValueFactory property="matricula"/>
+            		</cellValueFactory>
+            </TableColumn>
+            <TableColumn editable="false" prefWidth="75.0" text="Acreditado" fx:id="acreditado1" >
+            		<cellValueFactory>
+            		<PropertyValueFactory property="acreditado"/>
+            		</cellValueFactory>
+            </TableColumn>
+            <TableColumn editable="false" prefWidth="75.0" text="Modalidad" fx:id="modalida1" >
+            		<cellValueFactory>
+            		<PropertyValueFactory property="modalidad"/>
+            		</cellValueFactory>
+            </TableColumn>
+          </columns>
+        </TableView>
+        <Label fx:id="mensaje" alignment="CENTER" layoutX="43.0" layoutY="378.0" prefHeight="61.9609375" prefWidth="514.0" text="Mensaje Aqui" textFill="#990000">
+          <font>
+            <Font name="System Bold Italic" size="20.0" />
+          </font>
+        </Label>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

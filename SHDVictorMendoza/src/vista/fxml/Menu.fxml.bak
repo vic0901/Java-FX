@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0">
+      <children>
+        <ToolBar layoutX="21.0" layoutY="55.0" orientation="VERTICAL" prefHeight="331.0" prefWidth="77.0">
+          <items>
+            <Button mnemonicParsing="false" text="Carrera" />
+            <Button mnemonicParsing="false" text="Alumnos" />
+            <Button mnemonicParsing="false" text="Salir" />
+          </items>
+        </ToolBar>
+        <Text layoutX="35.0" layoutY="38.0" scaleX="1.516380324491494" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu">
+          <font>
+            <Font size="22.0" />
+          </font>
+        </Text>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>
