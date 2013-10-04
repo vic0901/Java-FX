@@ -31,7 +31,7 @@ public class Carrera {
 			this.acreditado= _acreditado;
 			this.con = new conexion();
 		}
-		
+		/*hola*/
 		public String getNombre() {
 			return nombre;
 		}
